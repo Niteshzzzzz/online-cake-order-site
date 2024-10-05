@@ -1,5 +1,4 @@
 
-https://github.com/user-attachments/assets/8259120b-aca8-457f-8e6f-2951d62e2b0c
 # online-cake-order-site
 
 
