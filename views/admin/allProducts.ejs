@@ -1,0 +1,19 @@
+<%- layout('./layouts/boilerplate') %>
+<br><br>
+<h3>All Products</h3>
+<div class="p-card-container">
+    <% for(let product of AllProducts){ %>
+        <div class="p-card">
+                <a href="/admin/<%= CurrUser._id %>/products/<%= product._id %>/show" class="p-img-container">  
+                    <img src="<%= product.image %> " class=" p-card-img"  alt="">
+                 </a>
+                <div class="p-card-body">
+                  <a href="/admin/<%= CurrUser._id %>/products/<%= product._id %>/show" class="p-card-title" >
+                    <h3 class="p-title"><%= product.name %></h3> 
+                  </a>
+                    <p> &#8377; <%= product.price %></p>
+                </div>
+       </div>
+
+  <%  } %>
+</div>

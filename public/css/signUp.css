@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    color: white;
+}
+.sign{
+    padding-inline: 8px;
+}
+.log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 100px 50px;
+}
+.login {
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+
+}
+
+.login .sr1 {
+    border-radius: inherit;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+.login .sr2 {
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    cursor: pointer;
+    border-radius: inherit;
+    background-color: rgb(38, 164, 38);
+    transition: all 0.3s ease-in-out;
+
+}
+
+h1{
+    font-size: 46px;
+    margin: 50px auto;
+    /* margin-inline: auto; */
+    text-align: center;
+}
+
+.register-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 76px;
+}
+
+.inEmail, .inName, .inPassword {
+    text-align: start;
+    padding: 0;
+    /* margin: -28px 0 -20px -190px; */
+    color: red;
+    font-size: 15px;
+    display: none;
+}
+
+/* .inName {
+    text-align: start;
+    padding: 0;
+    margin: -28px 0 -20px -190px;
+    color: red;
+    font-size: 15px;
+    display: none;
+}
+
+.inPassword {
+    text-align: start;
+    padding: 0;
+    margin: -28px 0 -20px 10px;
+    color: red;
+    font-size: 15px;
+    display: none;
+} */
+.basic-details, .address-container {
+    max-width: 400px;
+} 
+
+input{
+    color: white;
+    border: none;
+    font-size: 16px;
+    background-color: #111;
+    outline: none;
+    border-bottom: 2px solid grey;
+    width: 100%;
+    padding: 6px;
+    margin-top: 20px;
+}
+input:focus{
+    border-bottom: 2px solid white;
+
+}
+
+.bbb{
+    margin-top: 40px;
+    /* margin-inline: auto; */
+    text-align: center;
+}
+.btn{
+    width: 140px;
+    padding: 8px 24px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    background-color: rgb(15, 180, 117);
+    cursor: pointer;
+    outline: none;
+}
+
+.match{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.check {
+    color: grey;
+    margin: 6px 0;
+}
+
+@media(max-width: 900px){
+    .register-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
